@@ -96,19 +96,40 @@ CMakeFiles\TA14.dir\BigNumber.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\TA14.dir\BigNumber.cpp.s /c "D:\music\Music\jahan\C++\Ex C++\BigNumberFarhang\BigNumber\BigNumber.cpp"
 <<
 
+CMakeFiles\TA14.dir\MyBigNumber.cpp.obj: CMakeFiles\TA14.dir\flags.make
+CMakeFiles\TA14.dir\MyBigNumber.cpp.obj: ..\MyBigNumber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\music\Music\jahan\C++\Ex C++\BigNumberFarhang\BigNumber\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TA14.dir/MyBigNumber.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\TA14.dir\MyBigNumber.cpp.obj /FdCMakeFiles\TA14.dir\ /FS -c "D:\music\Music\jahan\C++\Ex C++\BigNumberFarhang\BigNumber\MyBigNumber.cpp"
+<<
+
+CMakeFiles\TA14.dir\MyBigNumber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TA14.dir/MyBigNumber.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe > CMakeFiles\TA14.dir\MyBigNumber.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\music\Music\jahan\C++\Ex C++\BigNumberFarhang\BigNumber\MyBigNumber.cpp"
+<<
+
+CMakeFiles\TA14.dir\MyBigNumber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TA14.dir/MyBigNumber.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\TA14.dir\MyBigNumber.cpp.s /c "D:\music\Music\jahan\C++\Ex C++\BigNumberFarhang\BigNumber\MyBigNumber.cpp"
+<<
+
 # Object files for target TA14
 TA14_OBJECTS = \
 "CMakeFiles\TA14.dir\main.cpp.obj" \
-"CMakeFiles\TA14.dir\BigNumber.cpp.obj"
+"CMakeFiles\TA14.dir\BigNumber.cpp.obj" \
+"CMakeFiles\TA14.dir\MyBigNumber.cpp.obj"
 
 # External object files for target TA14
 TA14_EXTERNAL_OBJECTS =
 
 TA14.exe: CMakeFiles\TA14.dir\main.cpp.obj
 TA14.exe: CMakeFiles\TA14.dir\BigNumber.cpp.obj
+TA14.exe: CMakeFiles\TA14.dir\MyBigNumber.cpp.obj
 TA14.exe: CMakeFiles\TA14.dir\build.make
 TA14.exe: CMakeFiles\TA14.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\music\Music\jahan\C++\Ex C++\BigNumberFarhang\BigNumber\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TA14.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\music\Music\jahan\C++\Ex C++\BigNumberFarhang\BigNumber\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TA14.exe"
 	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\TA14.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\TA14.dir\objects1.rsp @<<
  /out:TA14.exe /implib:TA14.lib /pdb:"D:\music\Music\jahan\C++\Ex C++\BigNumberFarhang\BigNumber\cmake-build-debug\TA14.pdb" /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

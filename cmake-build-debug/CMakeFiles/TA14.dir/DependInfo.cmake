@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/BigNumber.cpp" "D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/cmake-build-debug/CMakeFiles/TA14.dir/BigNumber.cpp.obj"
+  "D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/MyBigNumber.cpp" "D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/cmake-build-debug/CMakeFiles/TA14.dir/MyBigNumber.cpp.obj"
   "D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/main.cpp" "D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/cmake-build-debug/CMakeFiles/TA14.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")

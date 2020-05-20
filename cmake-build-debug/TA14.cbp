@@ -90,6 +90,12 @@
 		<Unit filename="D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/BigNumber.h">
 			<Option target="TA14"/>
 		</Unit>
+		<Unit filename="D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/MyBigNumber.cpp">
+			<Option target="TA14"/>
+		</Unit>
+		<Unit filename="D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/MyBigNumber.h">
+			<Option target="TA14"/>
+		</Unit>
 		<Unit filename="D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/main.cpp">
 			<Option target="TA14"/>
 		</Unit>
