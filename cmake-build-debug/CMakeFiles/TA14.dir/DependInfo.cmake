@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/User/CLionProjects/TA14/BigNumber.cpp" "/cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles/TA14.dir/BigNumber.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA14/main.cpp" "/cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles/TA14.dir/main.cpp.o"
+  "D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/BigNumber.cpp" "D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/cmake-build-debug/CMakeFiles/TA14.dir/BigNumber.cpp.obj"
+  "D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/main.cpp" "D:/music/Music/jahan/C++/Ex C++/BigNumberFarhang/BigNumber/cmake-build-debug/CMakeFiles/TA14.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
