@@ -10,7 +10,8 @@ class BigNumber {
     friend std::istream& operator>>( std::istream & input, BigNumber & myBig );
     friend BigNumber operator+( const BigNumber & num1, const BigNumber & num2);
     friend BigNumber operator-( const BigNumber & num1, const BigNumber & num2);
-private:
+
+protected:
     bool sign;
     int8_t * numArray = nullptr;
     unsigned numOfDigits;
