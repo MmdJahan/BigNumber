@@ -22,7 +22,7 @@ public:
     MyBigNumber( BigNumber && myBig ) noexcept :BigNumber(myBig) {};  // move constructor
     MyBigNumber multyByOneDigit( int digit);
     MyBigNumber operator<<(unsigned int shift );
-    MyBigNumber power(int );
+    MyBigNumber power( int digit );
     MyBigNumber operator()(unsigned int , unsigned int);
 
 };

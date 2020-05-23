@@ -84,6 +84,21 @@ MyBigNumber operator*(MyBigNumber &myBigNum1, MyBigNumber &myBigNum2) {
     return multy;
 }
 
+MyBigNumber MyBigNumber::operator()(unsigned int x, unsigned int y) {
+    if( x >= numOfDigits || x <= 0 || y-x > 1 || y <= 0) {
+        throw std::out_of_range("enter x or y in range!");
+    }
+    MyBigNumber cut;
+    cut.sign = sign;
+    cut.numOfDigits = y;
+    cut.numArray = new int8_t [cut.numOfDigits];
+    size_t i{0};
+    for(; i < y; i++){
+        cut[i] = numArray[x-y+1+i];
+    }
+    return cut;
+}
+
 
 
 
