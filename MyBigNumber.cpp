@@ -54,6 +54,41 @@ MyBigNumber MyBigNumber::power(int digit ) {
     return index;
 }
 
+BigNumber MyBigNumber::unsignedMultiplyOneDigit(int digit) {
+    MyBigNumber unMulty;
+    unMulty.sign = true;
+    unMulty.numOfDigits = numOfDigits + 1;
+    unMulty.numArray = new int8_t [unMulty.numOfDigits];
+    int8_t y = 0;
+    int8_t multy;
+    size_t i{0};
+    for(; i < numOfDigits ; i++) {
+        multy = digit * numArray[i] + y;
+        unMulty[i] = multy % 10;
+        y = multy /10;
+    }
+    if(y == 0) {
+        unMulty.numOfDigits -= 1;
+    }else if(y != 0) {
+        unMulty[i] = y;
+    }
+    int numOfZeroesOnTheLeft = 0;
+    size_t index{numOfDigits -1};
+    while(unMulty[index] == 0 && index > 0){
+        ++numOfZeroesOnTheLeft;
+        --index;
+    }
+    MyBigNumber Multy;
+    Multy.sign = true;
+    Multy.numOfDigits = unMulty.numOfDigits - numOfZeroesOnTheLeft;
+    Multy.numArray = new int8_t[Multy.numOfDigits];
+    for(size_t i{0} ; i < Multy.numOfDigits; ++i){
+        Multy[i] = unMulty[i];
+    }
+    return Multy;
+
+}
+
 MyBigNumber operator*(MyBigNumber &myBigNum1, MyBigNumber &myBigNum2) {
     MyBigNumber multy ="0";
     if(myBigNum1=="0" || myBigNum2=="0") {
@@ -94,10 +129,11 @@ MyBigNumber MyBigNumber::operator()(unsigned int x, unsigned int y) {
     cut.numArray = new int8_t [cut.numOfDigits];
     size_t i{0};
     for(; i < y; i++){
-        cut[i] = numArray[x-y+1+i];
+        cut[i] = numArray[x - y + 1 + i];
     }
     return cut;
 }
+
 
 
 
