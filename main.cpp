@@ -12,10 +12,11 @@ int main() {
     MyBigNumber myBigNum1 = -17319;
     MyBigNumber myBigNum2 = "0000173";
 
-    try{
-        cout << myBigNum1(2,3)<<endl;
+
+    try {
+        cout << myBigNum2.power(-1) << endl;
     }
-    catch( out_of_range e){
+    catch (invalid_argument e) {
         cout << e.what() << endl;
     }
 
@@ -25,12 +26,13 @@ int main() {
     cout << myBigNum1.multyByOneDigit(4) << endl;
     cout << (myBigNum2<<3) << endl;
 
-    try {
-        cout << myBigNum2.power(-1) << endl;
+    try{
+        cout << myBigNum1(2,3)<<endl;
     }
-    catch (invalid_argument e) {
+    catch( out_of_range e){
         cout << e.what() << endl;
     }
+
     cout << "the following outputs are related to class bigNumber" << endl;
     cout << myBigNum2<< endl;
     cout << ++myBigNum2<< endl;
