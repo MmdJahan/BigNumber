@@ -402,12 +402,12 @@ BigNumber operator-(const BigNumber &num1, const BigNumber &num2) {
     BigNumber minus;
     if(num1.sign == num2.sign)
     {
-        minus = BigNumber:: unsignedAdd(num1, num2);
-        minus.sign = num1.sign;
+        minus = BigNumber:: unsignedSubtract(num1, num2);
+        minus.sign = BigNumber::unsignedMax(num1, num2).sign;
     }
     else{
-        minus = BigNumber::unsignedSubtract(num1, num2);
-        minus.sign = BigNumber::unsignedMax(num1, num2).sign;
+        minus = BigNumber::unsignedAdd(num1, num2);
+        minus.sign = !(num2.sign);
     }
     if( minus.numOfDigits == 1 && minus[0] == 0 ){
         minus.sign = true;
